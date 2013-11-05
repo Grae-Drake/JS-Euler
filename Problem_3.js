@@ -31,4 +31,7 @@ function main(num){
 }
 
 var limit = 600851475143;
+var start = new Date()
 console.log(main(limit));
+var time = new Date() - start
+console.log("This took " + time + " milliseconds")
