@@ -9,29 +9,26 @@ function isPrime(num){
     }
     return true;
 }
-function factors(num){
-    var array = [];
+function main(num){
     var root = Math.sqrt(num);
+    var answer = 0;
 	for(var j=2; j<root; j++){
 		if(num % j === 0) {
-			array.push(j);
-            array.push(num/j);
+            big = num / j;
+            if(big>answer){
+                if(isPrime(big)){
+                   answer = big;
+                }
+            }
+            if(j>answer){
+                if(isPrime(j)){
+                    answer = j;
+                }
+            }
 		}
 	}
-    array.sort(function(a,b){return b-a});
-    return array;
+    return answer;
 }
 
-function main(limit){
-    var array = factors(limit);
-    console.log(array);
-    for(var k=0 ; k<array.length ; k++){
-        candidate = array[k];
-        if(isPrime(candidate)===true){
-            return candidate;
-        }
-    }
-    return "error, will robinson";
-}
-
-console.log(main(600851475143));
+var limit = 600851475143;
+console.log(main(limit));
