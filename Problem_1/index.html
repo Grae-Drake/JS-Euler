@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Euler - Problem 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="container">
+        <div class="page-header">
+          <h1>JS Euler - Problem 1</h1>
+        </div>
+        <h3>Multiples of 3 and 5</h3>
+        <div class="row">
+          <div class="jumbotron">
+            <p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.</p>
+            <p>Find the sum of all the multiples of 3 or 5 below <span id="limit" contenteditable="true">1000</span>.</p>
+            <input type="submit" class="btn btn-info btn-large pull-right" value="Run!"/>
+          </div>
+        </div>
+        <h4>
+          <span>Your result is:</span>
+          <span class="finished result"></span>
+        </h4>
+        <h4>
+          <span>Your execution time was:</span>
+          <span class="finished time"></span>
+        </h4>
+        <h4>Go to projecteuler.net to test it out!</h4>
+        <div class="progress progress-striped active">
+          <div class="progress-bar " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+            <span class="sr-only">40% Complete (success)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Do stuff!!!! -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+    <script type="text/javascript" src="js/problem1.js"></script>
+  </body>
+</html>
