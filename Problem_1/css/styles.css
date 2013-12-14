@@ -25,3 +25,20 @@
 .finished {
 	color: #ff9900;
 }
+
+.collapsed {
+	width: 0%;
+	background-color: #428bca;
+}
+.expandify {
+	width: 100%;
+	background-color: #d9534f;
+	transition-timing-function: linear;
+	-o-transition-timing-function:linear;
+	-webkit-transition-timing-function: linear;
+	-moz-transition-timing-function: linear;
+	-moz-transition:width 60s, background-color 60s, -moz-transform 60s;
+    -webkit-transition:width 60s, background-color 60s,  -webkit-transform 60s;
+    -o-transition:width 60s, background-color 60s,  -o-transform 60s;
+    transition:width 60s, background-color 60s,  transform 60s;
+}
