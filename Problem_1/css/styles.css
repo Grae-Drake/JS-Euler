@@ -26,19 +26,15 @@
 	color: #ff9900;
 }
 
-.collapsed {
+.progress-striped .collapsed {
 	width: 0%;
-	background-color: #428bca;
+	background-color: #5cb85c;
 }
-.expandify {
+.progress-striped .expandify {
 	width: 100%;
 	background-color: #d9534f;
-	transition-timing-function: linear;
-	-o-transition-timing-function:linear;
-	-webkit-transition-timing-function: linear;
-	-moz-transition-timing-function: linear;
-	-moz-transition:width 60s, background-color 60s, -moz-transform 60s;
-    -webkit-transition:width 60s, background-color 60s,  -webkit-transform 60s;
-    -o-transition:width 60s, background-color 60s,  -o-transform 60s;
-    transition:width 60s, background-color 60s,  transform 60s;
+	-moz-transition:width 60s linear, background-color 60s linear, -moz-transform 60s linear;
+    -webkit-transition:width 60s linear, background-color 60s linear,  -webkit-transform 60s linear;
+    -o-transition:width 60s linear, background-color 60s linear,  -o-transform 60s linear;
+    transition:width 60s linear, background-color 60s linear,  transform 60s linear;
 }
