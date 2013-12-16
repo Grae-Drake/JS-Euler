@@ -1,5 +1,12 @@
 $(document).ready(function() {
-   
+
+   // Let's play with a web worker!
+   // Failing with error: "Uncaught SecurityError: Failed to create a worker: script
+   // at [path to problem1.js] cannot be accessed from origin 'null'".
+   // Chrome may be blocking files from "file://".
+   var worker = new Worker("problem1.js");
+   worker.postMessage();
+
    // Event handler for Run button.
    $("#run").on("click", function() {
       $("#run").trigger("blur");
