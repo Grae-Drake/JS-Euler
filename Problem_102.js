@@ -20,3 +20,9 @@ t1 = Object.create(Triangle, {"coordinateString": {value:data[1]}});
 t1.generatePoints(t1.coordinateString);
 
 console.dir(t1);
+
+// Idea: given three points creating an angle, can you tell whether a fouth
+// point is _inside_ or _outside_ (assuming it's not _on_) the angle?
+// Seems like yes: draw a lind from the fourth point to the vertex. That should
+// create two new angles. If the point is inside, the two new angles will sum
+// to less than pi.  If outside, they should sum to greater than pi.
